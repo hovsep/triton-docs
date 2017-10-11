@@ -130,11 +130,11 @@ We suggest some kind of `Semantic versioning <http://semver.org/>`_ for contract
 
 Here are few sample rules:
 
-- Version consist of 3 parts: protocol version.major.minor
-- Current protocol version is 1. It may be increased only after braking changes in DC-paradigm.
-- Every time you add/remove/edit variable or add/remove contract you should increase major version.
-- Every time you make non breaking changes such as code comments, formatting etc you should increase minor version.
-- Use git tags for marking a version
+    - Version consist of 3 parts: protocol version.major.minor
+    - Current protocol version is 1. It may be increased only after braking changes in DC-paradigm.
+    - Every time you add/remove/edit variable or add/remove contract you should increase major version.
+    - Every time you make non breaking changes such as code comments, formatting etc you should increase minor version.
+    - Use git tags for marking a version
 
 First of all add "repositories" section in your sdk composer.json file:
 
