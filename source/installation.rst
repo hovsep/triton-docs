@@ -30,7 +30,7 @@ Installation steps
     It is called Data Contract or SDK and consists of base event class and some utility classes.
     You will be able to add your custom event classes into it.
 
-    SDK repository may be located at any place accessible from both main application and Triton servers.
+    SDK repository may be located at any place accessible from both main application and Triton servers (we suggest to use private github or bitbucket repo).
     Triton and your main application will use same version of SDK via composer.
     The idea is to keep both systems in sync, allowing them to interact using same data contract repository.
 
@@ -66,16 +66,19 @@ Installation steps
 
     Triton is a Laravel application, so you can refer to `Laravel docs <https://laravel.com/docs/5.4#web-server-configuration>`_.
 
+    .. important:: Directories within the ``storage`` and the ``bootstrap/cache`` directories must be writable by your web server
+
 
 (5) **Environment**
 
     Rename .env.example to .env and set appropriate values for each parameter.
 
+    Run `php artisan key:generate` to set new app key, which will be used to encrypt user passwords.
+
+    Create new MySQL database if you do not have existing one.
+
     .. glossary::
 
-    *APP_KEY*
-        parameter is used by Laravel for encryption routines.
-        You should receive it from vendor with the license key.
     *APP_URL*
         Your web host url.
     *DB*, *RABBITMQ* and *REDIS*  sections
@@ -86,13 +89,8 @@ Installation steps
     .. hint:: Additional transports may be added at config/mail.php
 
 
-(6) **Configuration (optional)**
 
-    Feel free to play with config files in /config directory.
-    For example you can add more email transports in config\mail.php.
-
-
-(7) **Migrations and seeds**
+(6) **Migrations and seeds**
 
     Run `php artisan migrate` to create a database schema.
 
@@ -103,14 +101,14 @@ Installation steps
     .. caution:: Change default password to secure one.
 
 
-(8) **Cron**
+(7) **Cron**
 
     You only need to add the following Cron entry to your server. `Learn more <https://laravel.com/docs/5.4/scheduling>`_
 
     `* * * * * php /path-to-triton/artisan schedule:run >> /dev/null 2>&1`
 
 
-(9) **Running queue workers**
+(8) **Running queue workers**
 
     Run:
 
