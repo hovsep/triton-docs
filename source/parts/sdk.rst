@@ -129,6 +129,7 @@ DC works on top of composer and git, so versioning is already in the veins.
 We suggest some kind of `Semantic versioning <http://semver.org/>`_ for contracts.
 
 Here are few sample rules:
+
 - Version consist of 3 parts: protocol version.major.minor
 - Current protocol version is 1. It may be increased only after braking changes in DC-paradigm.
 - Every time you add/remove/edit variable or add/remove contract you should increase major version.
