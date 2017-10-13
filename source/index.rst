@@ -1,4 +1,4 @@
-.. Triton docs documentation master file, created by
+.. Triton documentation master file, created by
    sphinx-quickstart on Wed Aug 30 23:28:30 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
