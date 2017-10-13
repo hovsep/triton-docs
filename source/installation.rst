@@ -27,7 +27,7 @@ Installation steps
 (2) **Triton-SDK**
 
     Triton uses special protocol for transporting events from your application to queue.
-    It is called Data Contract or SDK and consists of base event class and some utility classes.
+    It is called Data Contract and consists of base event class and some utility classes.
     You will be able to add your custom event classes into it.
 
     SDK repository may be located at any place accessible from both main application and Triton servers (we suggest to use private github or bitbucket repo).
