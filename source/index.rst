@@ -36,13 +36,3 @@ Triton documentation
    testing
    export_import
    archive
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
