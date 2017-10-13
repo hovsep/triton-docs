@@ -7,11 +7,22 @@ Triton documentation
 ====================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
+   :caption: Getting started
 
    introduction
    installation
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Developer's guide
+
    Developer's guide <dev_guide>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Users's guide
+
    Users's guide <user_guide>
 
 
