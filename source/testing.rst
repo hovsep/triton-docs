@@ -2,6 +2,8 @@
 Testing mails
 -------------
 
+.. _testing:
+
 Of course you should not send your emails before you are not sure it is 100% ok.
 No doubt that emails are very important, one broken link may decrease users loyalty.
 That's why you should always test your emails before sending.

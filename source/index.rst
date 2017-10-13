@@ -17,13 +17,25 @@ Triton documentation
    :maxdepth: 1
    :caption: Developer's guide
 
-   Developer's guide <dev_guide>
+   sdk
 
 .. toctree::
    :maxdepth: 1
    :caption: Users's guide
 
-   Users's guide <user_guide>
+   dashboard
+   campaigns
+   groups
+   lists
+   stats
+   templates
+   tracking_categories
+   triggers
+   settings
+   users
+   testing
+   export_import
+   archive
 
 
 

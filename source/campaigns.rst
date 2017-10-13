@@ -17,7 +17,7 @@ Campaign fields are following:
     The template that will be used for emails in given campaign.
 
 - List
-    The list of recipients. :ref:`Learn more about lists<lists>`.
+    The list of recipients. :ref:`Learn more about lists <lists>`.
 
 - Schedule at
     Date and time (server time used) when campaign should start.

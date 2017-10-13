@@ -2,6 +2,8 @@
 Export and Import
 -----------------
 
+.. _export_import:
+
 Triton allows you to export your inventory to external file.
 Triton uses its own protected file format with ".triton" extension.
 File content is encrypted and signed, so no one is able to modify it outside of Triton app.

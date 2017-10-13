@@ -2,6 +2,8 @@
 Lists
 -----
 
+.. _lists:
+
 Lists are used to manage recipients. Think of it just as about group of recipients.
 
 List has few general fields: name,description, group.

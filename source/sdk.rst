@@ -1,6 +1,5 @@
----
-SDK
----
+
+.. _sdk:
 
 For interacting with your main application Triton uses special protocol called Data Contracts or simply DC.
 DC comes as a set of PHP-classes which allows you to send data consistently from main app to Triton.
@@ -12,8 +11,8 @@ With DC main app is not able to send incomplete data set, DC will raise an excep
 From another hand Triton will be able to help user composing the templates.
 It will show all variables available in given context.
 
-Installation
-============
+SDK Installation
+================
 
 This document assumes some basic familiarity with git and composer.
 
