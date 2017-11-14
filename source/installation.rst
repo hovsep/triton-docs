@@ -16,14 +16,20 @@ Server requirements
 - RabbitMQ
 - Redis
 
+For example, installing the following packages will provide fully compatible environment on Ubuntu 16.04:
+
+    .. code-block:: javascript
+
+        apache2 php libapache2-mod-php composer git
+        php-bcmath php-mysql php-mbstring php-xml
+        mysql-server rabbitmq-server redis-server php-redis
+
 The product has been tested on several modern Linux distributions. It should work on Windows but has not been fully tested there. RabbitMQ and Redis services may run on a separate server and can be accessed remotely via host/port.
 
 Installation steps
 ==================
 
-(1) **Extract Triton files from archive and move them to your web host document root**
-
-    It is strongly advised to setup a virtual host for accessing Triton via dedicated domain or subdomain.
+(1) **Extract Triton files from archive and move them to your web server document root**
 
 .. _sdk_installation:
 
@@ -52,13 +58,13 @@ Installation steps
           ]
 
 
-    After that you can add a dependency the standard way:
+    After that you can add a dependency as usual:
 
     .. code-block:: javascript
 
         "triton/triton-sdk-php": "dev-master",
 
-    As you can see, we have "dev-master" version here, it helps during development. You can supply specific versions later.
+    As you see we have version "dev-master" here, it is helpful during development. Subsequently, you can supply specific versions.
     It is very important to keep it in sync on both (Triton and main app) systems. :ref:`Learn more about contracts development <sdk>`.
 
     In the simplest case, whem Triton and your main app run on the same server, you can simply place Triton SDK into a directory and inform Composer where to look for it. For example:
@@ -92,7 +98,7 @@ Installation steps
 
     Run `php artisan key:generate` to set new app key, which will be used to encrypt user passwords.
 
-    Create new MySQL database if you do not have one yet.
+    Create new MySQL database if you do not have existing one.
 
     .. glossary::
 
@@ -105,23 +111,27 @@ Installation steps
 
     .. hint:: Additional transports may be added at config/mail.php
 
+
+
 (6) **Migrations and seeds**
 
-    In here, migration means setting up a database and filling it with initial structure and data (referred to as seeds).
+    In here, migration means setting up a database and filling it with initial structure and data.
 
     Run `php artisan migrate` to create a database schema.
 
-    Run `php artisan db:seed` to fill db with roles, permissions and initial user account.
-    By default, admin account is created with username "admin@<your app url domain>" and password "admin".
+    Run `php artisan db:seed` to fill db with roles,permissions and initial user account.
+    By default it will create an admin account with username "admin@<your app url domain>" and password "admin".
     After seeding you will be able to log in into the system and create new accounts.
 
     .. caution:: Change default password to secure one.
+
 
 (7) **Cron**
 
     You only need to add the following Cron entry to your server. `Learn more <https://laravel.com/docs/5.4/scheduling>`_
 
     `* * * * * php /path-to-triton/artisan schedule:run >> /dev/null 2>&1`
+
 
 (8) **Running queue workers**
 
