@@ -112,7 +112,6 @@ Installation steps
     .. hint:: Additional transports may be added at config/mail.php
 
 
-
 (6) **Migrations and seeds**
 
     In here, migration means setting up a database and filling it with initial structure and data.
