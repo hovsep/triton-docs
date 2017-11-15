@@ -141,7 +141,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Triton.tex', u'Triton Documentation',
+    (master_doc, 'Triton.tex', u'Afterlogic Triton Documentation',
      u'Hovsep Avakyan', 'manual'),
 ]
 
@@ -151,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'triton', u'Triton Documentation',
+    (master_doc, 'triton', u'Afterlogic Triton Documentation',
      [author], 1)
 ]
 
@@ -162,8 +162,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Triton', u'Triton Documentation',
-     author, 'Triton', 'One line description of project.',
+    (master_doc, 'Triton', u'Afterlogic Triton Documentation',
+     author, 'Triton', 'Transactional and newsletter emails platform',
      'Miscellaneous'),
 ]
 
