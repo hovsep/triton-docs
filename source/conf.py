@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Triton'
+project = u'Afterlogic Triton'
 copyright = u'2017, Hovsep Avakyan'
 author = u'Hovsep Avakyan'
 
@@ -162,8 +162,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Triton', u'Afterlogic Triton Documentation',
-     author, 'Triton', 'Transactional and newsletter emails platform',
+    (master_doc, 'Afterlogic Triton', u'Afterlogic Triton Documentation',
+     author, 'Afterlogic Triton', 'Transactional and newsletter emails platform',
      'Miscellaneous'),
 ]
 
